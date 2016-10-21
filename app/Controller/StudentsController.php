@@ -22,7 +22,7 @@ class StudentsController extends AppController {
  * @return void
  */
 	public function index() {
-		$this->Student->recursive = 0;
+		$this->Student->recursive = 1;
 		$this->set('students', $this->Paginator->paginate());
 	}
 
